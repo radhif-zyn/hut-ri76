@@ -515,6 +515,16 @@ ul {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .sejarah {
+        margin-top: 0;
+    }
+
+    .banner-sejarah {
+        height: 500px;
+    }
+}
+
 .container {
     width: 80%;
     padding: 50px 0;
@@ -618,7 +628,7 @@ ul {
 
 .footer {
     width: 100%;
-    height: 400px;
+    height: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -631,7 +641,7 @@ ul {
 }
 
 .footer-text h1 {
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .backtotop-btn {
@@ -677,7 +687,28 @@ ul {
     object-fit: cover;
 }
 
-/* AOS */
 .footer, .sejarah, .container, .home {
     overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .footer-text {
+        padding: 1rem;
+        padding-top: 4rem;
+    }
+
+    .footer-text h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .footer-img {
+        width: 280px;
+        height: 280px;
+    }
 }
